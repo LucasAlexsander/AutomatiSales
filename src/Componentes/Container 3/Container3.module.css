@@ -1,0 +1,85 @@
+section.functions {
+  min-height: 100dvh;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 60px;
+  margin: 65px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cards {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .titleSection {
+    margin: 80px auto 33px auto;
+  }
+
+  .cards {
+    flex-wrap: nowrap;
+    gap: 30px;
+    padding: 30px;
+    overflow-x: scroll;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .card {
+    flex-shrink: 0;
+  }
+}
+
+
+
+.card {
+  max-width: 320px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px 15px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.45);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardHeader h3, .desc p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cardHeader img {
+  height: 36px;
+}
+
+.subtitle p {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 390px) {
+  .card {
+    width: 290px;
+  }
+}

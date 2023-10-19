@@ -1,0 +1,38 @@
+.plataformasIcons {
+  margin-top: 63px;
+  max-width: 986px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 50px;
+  gap: 40px;
+  margin-bottom: 4rem;
+}
+
+.plataformasIcons img {
+  width: 90px;
+}
+
+@media only screen and (max-width: 970px) {
+  .plataformasIcons {
+    gap: 25px;
+  }
+
+  .plataformasIcons img {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .plataformasIcons {
+    gap: 25px;
+    justify-content: space-around;
+  }
+
+  .plataformasIcons img {
+    width: 70px;
+  }
+}

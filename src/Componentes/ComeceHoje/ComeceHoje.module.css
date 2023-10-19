@@ -1,0 +1,46 @@
+.comeceHoje {
+  height: 40dvh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  max-width: 580px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  margin: 0 auto;
+}
+
+.comeceHoje h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.comeceHoje p {
+  font-size: 1.125rem;
+}
+
+.btnConsultor {
+  display: block;
+  color: #0C4716;
+  font-weight: 700;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #F0F6F4 0%, #DBE2E0 100%);
+  padding: 8px 12px;
+  width: fit-content;
+  transition: background, color, transform .2s;
+}
+
+@media only screen and (max-width: 786px) {
+  .comeceHoje h3 {
+    font-size: 1.5rem;
+  }
+
+  .comeceHoje p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,148 @@
+.fac {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 0 20px;
+}
+
+.fac .facTitle {
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.facTitle h3, .facTitle p {
+  text-align: start;
+}
+
+.perguntas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+}
+
+.pergunta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+}
+
+.pergunta .iconFac {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.pergunta .iconFac span {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #1f1f1f;
+  transition: transform .4s ease-in-out, width .4s ease-in-out;
+}
+
+.pergunta .iconFac span:nth-child(1) {
+  transform: rotate(45deg) translate(-4px, 4px);
+}
+
+.pergunta .iconFac span:nth-child(2) {
+  transform: rotate(-45deg) translate(4px, 4px);
+}
+
+@media only screen and (max-width: 700px) {
+  .perguntas {
+    place-items: center;
+    gap: 23px 60px;
+  }
+
+  .box {
+    max-width: 90%;
+    width: 100%;
+    gap: 0;
+    border-bottom: 2px solid #1f1f1fab;
+  }
+
+  .pergunta {
+    height: 40px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .pergunta svg {
+    display: block;
+    height: 1.125rem;
+  }
+
+  .resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+  }
+
+  .box.active .resposta {
+    max-height: 400px;
+  }
+
+  .box.active .resposta p {
+    animation: fadeIn .3s ease-in-out forwards;
+  }
+
+  .pergunta .iconFac {
+    display: flex;
+  }
+
+  .box.active .pergunta .iconFac span:nth-child(1) {
+    transform: rotate(45deg) translate(0px, 0px);
+    width: 23px;
+  }
+
+  .box.active .pergunta .iconFac span:nth-child(2) {
+    transform: rotate(-45deg) translate(0px, 0px);
+    width: 23px;
+  }
+
+  .resposta p {
+    padding: 3px 10px 10px 10px;
+    animation: fadeOut .3s ease-in-out forwards .3s reverse;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,187 @@
+header {
+  width: 100vw;
+  height: 100px;
+  background-color: #ffffff9a;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 100%;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  display: block;
+  width: 100%;
+}
+
+li.button a {
+  display: block;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #05A86C 0%, #039A62 100%);
+  color: #fff;
+  padding: 8px 12px;
+  margin-left: 15px;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+/* Mobile */
+.menuBurguer {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 35px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.icon span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #1f1f1f;
+  transition: transform .2s linear;
+}
+
+.icon span:nth-child(1) {
+  width: 70%;
+}
+
+.icon span:nth-child(2) {
+  width: 85%;
+  animation: normalButtonMenu .2s linear forwards reverse;
+}
+
+.menuMobile {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: -30px;
+  animation: openMenu .2s linear forwards;
+  background-color: #fff;
+  z-index: 11;
+  padding: 30px;
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menuBurguer:has(.menuMobile) .icon {
+  position: relative;
+  justify-content: center;
+}
+
+.menuBurguer:has(.menuMobile) .icon span {
+  position: absolute;
+}
+
+.menuBurguer:has(.menuMobile) .icon span:nth-child(1) {
+  width: 100%;
+  transform: rotate(-135deg);
+}
+
+.menuBurguer:has(.menuMobile) .icon span:nth-child(2) {
+  animation: closeButtonMenu .2s linear forwards;
+}
+
+.menuBurguer:has(.menuMobile) .icon span:nth-child(3) {
+  transform: rotate(135deg);
+}
+
+.menuMobile ul {
+  flex-direction: column;
+  align-items: end;
+  gap: 32px;
+}
+
+.menuMobile ul li {
+  font-size: 1.125rem;
+}
+
+/* Animação Abrindo menu*/
+@keyframes openMenu {
+  from {
+    transform: translateX(25px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes closeButtonMenu {
+  to {
+    transform: translateX(25px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes normalButtonMenu {
+  to {
+    transform: translateX(25px);
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  nav ul {
+    /* gap: 15px; */
+  }
+
+  li.button a {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menuDesk {
+    display: none;
+  }
+
+  .menuBurguer {
+    display: block;
+  }
+}

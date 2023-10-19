@@ -2,6 +2,9 @@
   height: 40dvh;
   display: grid;
   place-items: center;
+  background: url('../../../public/midia/bgSection.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .container {

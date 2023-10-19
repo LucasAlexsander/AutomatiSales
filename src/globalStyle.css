@@ -23,9 +23,6 @@ img {
 }
 
 .bgSection {
-  background: url('../../../public/midia/bgSection.jpg') no-repeat;
-  background-position: center center;
-  background-size: cover;
   color: #FDFDFD;
 }
 

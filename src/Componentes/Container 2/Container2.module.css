@@ -4,6 +4,9 @@ section.servicos {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('../../../public/midia/bgSection.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .area {

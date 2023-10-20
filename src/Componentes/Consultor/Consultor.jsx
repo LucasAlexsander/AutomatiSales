@@ -1,23 +1,27 @@
 import React from 'react';
 import styles from './Consultor.module.css';
 import Formulario from './Form/Formulario';
+import iconBrowser from '../../../public/midia/Icons/Forms/browser.svg';
+import iconArrowRight from '../../../public/midia/Icons/Forms/arrowRight.svg';
+import iconGraph from '../../../public/midia/Icons/Forms/graph.svg';
+import iconMoney from '../../../public/midia/Icons/Forms/money.svg';
 
 const caracteristicas = [
   {
     title: 'Organização de processos',
-    icon: '../../../public/midia/Icons/Forms/browser.svg',
+    icon: iconBrowser,
   },
   {
     title: 'Agilidade na execução',
-    icon: '../../../public/midia/Icons/Forms/arrowRight.svg',
+    icon: iconArrowRight,
   },
   {
     title: 'Visibilidade do desempenho',
-    icon: '../../../public/midia/Icons/Forms/graph.svg',
+    icon: iconGraph,
   },
   {
     title: 'Retorno sobre o investimento',
-    icon: '../../../public/midia/Icons/Forms/money.svg',
+    icon: iconMoney,
   },
 ];
 

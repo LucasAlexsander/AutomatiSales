@@ -2,12 +2,14 @@ import React from 'react';
 import styles from './Clientes.module.css';
 import Slider from './Slide/Slider';
 import { SwiperSlide } from 'swiper/react';
+import lorenaAlbuquerque from '../../../public/midia/Clientes/LorenaAlbuquerque.png';
+import henriqueDiaz from '../../../public/midia/Clientes/HenriqueDiaz.png';
+import julianaBraz from '../../../public/midia/Clientes/JulianaBraz.png';
 
 const Clientes = () => {
   const slideSettings = {
     spaceBetween: 50,
     slidesPerView: 3,
-    navigation: true,
     autoplay: {
       delay: 5000,
     },
@@ -42,21 +44,21 @@ const Clientes = () => {
       profissao: 'Agência Ynsales ',
       feedback:
         '“A implementação das automações da Automatisales transformou a Agência Ynsales. Antes, tínhamos dificuldades em gerar leads e converter vendas. Agora, nosso time comercial aumentou em mais de 50% o número de ligações e 20% a conversão de vendas. Obrigado, Automatisales!”',
-      imgProfile: '../../../public/midia/Clientes/LorenaAlbuquerque.png',
+      imgProfile: lorenaAlbuquerque,
     },
     {
       nome: 'Henrique Diaz',
       profissao: 'Clinicas Henrique Diaz',
       feedback:
         '“Eu estava lutando para acompanhar a concorrência antes de contratar a consultoria comercial de automação. Eles me ajudaram a identificar as áreas em que eu estava ficando para trás e me forneceram soluções práticas para melhorar minha estratégia de vendas. Agora, estou superando meus concorrentes!”',
-      imgProfile: '../../../public/midia/Clientes/HenriqueDiaz.png',
+      imgProfile: henriqueDiaz,
     },
     {
       nome: 'Juliana Braz',
       profissao: 'Arte Da Jujuba',
       feedback:
         '“Eu não tinha certeza se a consultoria comercial de automação seria útil para o meu negócio, mas decidi dar uma chance. Fiquei surpreso com o quão útil foi! Eles me ajudaram a automatizar muitos dos processos tediosos que eu costumava fazer manualmente, o que me permitiu economizar tempo e dinheiro.”',
-      imgProfile: '../../../public/midia/Clientes/JulianaBraz.png',
+      imgProfile: julianaBraz,
     },
   ];
 

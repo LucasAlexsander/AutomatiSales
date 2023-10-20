@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ComeceHoje.module.css';
+import { Link } from 'react-router-dom';
 
 const ComeceHoje = () => {
   return (
@@ -11,9 +12,9 @@ const ComeceHoje = () => {
           assertivo e nada melhor que uma automação integrada para te ajudar
           nisso!
         </p>
-        <a href="#" className={styles.btnConsultor}>
+        <Link className={styles.btnConsultor} to="/consultor">
           Fale com um consultor
-        </a>
+        </Link>
       </div>
     </section>
   );

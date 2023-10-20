@@ -38,39 +38,25 @@ const Clientes = () => {
 
   const clientsInfo = [
     {
-      nome: 'Lorem Ipsum',
-      profissao: 'Dolor sit',
+      nome: 'Lorena Albuquerque',
+      profissao: 'Agência Ynsales ',
       feedback:
-        'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. Ut id iaculis mauris lobortis turpis proin erat et. Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae.',
-      imgProfile: '',
+        '“A implementação das automações da Automatisales transformou a Agência Ynsales. Antes, tínhamos dificuldades em gerar leads e converter vendas. Agora, nosso time comercial aumentou em mais de 50% o número de ligações e 20% a conversão de vendas. Obrigado, Automatisales!”',
+      imgProfile: '../../../public/midia/Clientes/LorenaAlbuquerque.png',
     },
     {
-      nome: 'Lorem Ipsum',
-      profissao: 'Dolor sit',
+      nome: 'Henrique Diaz',
+      profissao: 'Clinicas Henrique Diaz',
       feedback:
-        'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. Ut id iaculis mauris lobortis turpis proin erat et. Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae.',
-      imgProfile: '',
+        '“Eu estava lutando para acompanhar a concorrência antes de contratar a consultoria comercial de automação. Eles me ajudaram a identificar as áreas em que eu estava ficando para trás e me forneceram soluções práticas para melhorar minha estratégia de vendas. Agora, estou superando meus concorrentes!”',
+      imgProfile: '../../../public/midia/Clientes/HenriqueDiaz.png',
     },
     {
-      nome: 'Lorem Ipsum',
-      profissao: 'Dolor sit',
+      nome: 'Juliana Braz',
+      profissao: 'Arte Da Jujuba',
       feedback:
-        'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. Ut id iaculis mauris lobortis turpis proin erat et. Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae.',
-      imgProfile: '',
-    },
-    {
-      nome: 'Lorem Ipsum',
-      profissao: 'Dolor sit',
-      feedback:
-        'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. Ut id iaculis mauris lobortis turpis proin erat et. Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae.',
-      imgProfile: '',
-    },
-    {
-      nome: 'Lorem Ipsum',
-      profissao: 'Dolor sit',
-      feedback:
-        'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. Ut id iaculis mauris lobortis turpis proin erat et. Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae.',
-      imgProfile: '',
+        '“Eu não tinha certeza se a consultoria comercial de automação seria útil para o meu negócio, mas decidi dar uma chance. Fiquei surpreso com o quão útil foi! Eles me ajudaram a automatizar muitos dos processos tediosos que eu costumava fazer manualmente, o que me permitiu economizar tempo e dinheiro.”',
+      imgProfile: '../../../public/midia/Clientes/JulianaBraz.png',
     },
   ];
 
@@ -95,7 +81,7 @@ const Clientes = () => {
                 </div>
                 <div className={styles.fotoPerfil}>
                   {imgProfile != '' ? (
-                    <img src={imgProfile} alt="Foto do Cliente" />
+                    <img src={imgProfile} alt={`Foto do ${nome}`} />
                   ) : (
                     <></>
                   )}

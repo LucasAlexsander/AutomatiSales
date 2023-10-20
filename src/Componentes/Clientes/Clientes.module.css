@@ -37,3 +37,7 @@
   border-radius: 50%;
   background-color: #D9D9D9;
 }
+
+.fotoPerfil img {
+  border-radius: 50%;
+}

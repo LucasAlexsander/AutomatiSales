@@ -39,6 +39,10 @@
   font-size: 1.125rem;
 }
 
+.pergunta h5 {
+  font-size: 1.125rem;
+}
+
 .pergunta .iconFac {
   position: relative;
   width: 20px;
@@ -71,6 +75,14 @@
     gap: 23px 60px;
   }
 
+  .pergunta h5 {
+    font-size: 1rem;
+  }
+
+  .pergunta p {
+    font-size: .895rem;
+  }
+
   .box {
     max-width: 90%;
     width: 100%;
@@ -79,14 +91,10 @@
   }
 
   .pergunta {
-    height: 40px;
+    min-height: 40px;
     max-width: 100%;
     padding: 0 10px;
-  }
-
-  .pergunta svg {
-    display: block;
-    height: 1.125rem;
+    gap: 30px;
   }
 
   .resposta {

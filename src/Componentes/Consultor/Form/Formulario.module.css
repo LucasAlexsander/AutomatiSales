@@ -1,0 +1,39 @@
+.inputError {
+  border-color: red !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+}
+
+.formGroup input, .formGroup select {
+  outline: none;
+  width: 100%;
+  height: 35px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+.formGroup select option {
+  cursor: pointer;
+}
+
+button[type='submit'] {
+  display: block;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #05A86C 0%, #039A62 100%);
+  color: #fff;
+  padding: 8px 32px;
+  white-space: nowrap;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, .5);
+}

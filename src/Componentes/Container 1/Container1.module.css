@@ -1,54 +1,170 @@
 main {
-  max-width: 832px;
+  position: relative;
+  max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   gap: 23px;
   margin: 120px auto;
+  display: flex;
+  align-items: center;
 }
 
-main h1, main p {
-  text-align: center;
+.text {
+  max-width: 500px;
+  width: 100%;
+  padding-left: 30px;
 }
 
-main h1 {
-  font-size: 2.5rem;
+.text h1, .text p {
+  opacity: 0;
 }
 
-main span {
+.text h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  animation: fadeIn .4s linear forwards .3s;
+}
+
+.text p {
+  animation: fadeIn .4s linear forwards .4s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.text span {
   position: relative;
   display: inline-block;
   color: #2DA641;
 }
 
-main span svg {
+.text span svg {
   position: absolute;
   width: 105%;
   bottom: 0;
   left: -2.5%;
 }
 
-main p {
+.text p {
   max-width: 576px;
   font-size: 1rem;
-  padding: 0 20px;
+}
+
+
+.backgrounds {
+  position: relative;
+  align-self: start;
+  width: 700px;
+  height: 200px;
+  flex-shrink: 0;
+  z-index: -1;
+}
+
+.backgrounds img {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.backgrounds img:nth-child(1) {
+  transform: translate(-50px, 0px);
+  animation: fadeBg1 .4s linear forwards .3s;
+}
+
+.backgrounds img:nth-child(2) {
+  transform: translateY(-50px);
+  animation: fadeBg2 .4s linear forwards .4s;
+}
+
+@keyframes fadeBg1 {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(initial);
+  }
+}
+
+@keyframes fadeBg2 {
+  from {
+    opacity: 0;
+    transform: translate(70px, -50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(initial);
+  }
+}
+
+
+@media only screen and (max-width: 1149px) {
+  .text h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .text {
+    flex-shrink: 1;
+  }
+
+  .backgrounds {
+    flex-shrink: 1;
+  }
+}
+
+@media only screen and (max-width: 981px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text h1, .text p {
+    text-align: center;
+  }
+
+  .backgrounds {
+    position: absolute;
+    align-self: center;
+    bottom: -50px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
 
-  main {
-    margin-bottom: 60px;
+  .text {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-left: 0;
   }
 
-  main h1 {
+  .text h1 {
     font-size: 1.5rem;
   }
 
-  main span svg {
+  .text span svg {
     width: 108%;
     left: -4%;
     bottom: -2px;
     transform: rotate(0.6deg);
+  }
+
+  .backgrounds {
+    width: 100vw;
+    opacity: .6;
   }
 }

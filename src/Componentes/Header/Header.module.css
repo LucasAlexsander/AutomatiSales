@@ -23,6 +23,17 @@ header {
   flex-shrink: 0;
 }
 
+.containerLogo {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerLogo .logo {
+  margin-right: 0;
+}
+
 img {
   max-width: 100%;
   display: block;

@@ -1,0 +1,25 @@
+.agradecimentoSection {
+  max-width: 1200px;
+  width: 100%;
+  height: calc(100dvh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container a {
+  margin-top: 8px;
+  color: #039A62;
+  text-decoration: underline;
+}

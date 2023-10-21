@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header>
-      {location.pathname != '/consultor' ? (
+      {location.pathname === '/' ? (
         <div className={styles.container}>
           <div className={styles.logo}>
             <Link to="/">

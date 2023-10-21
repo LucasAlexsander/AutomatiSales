@@ -28,17 +28,22 @@ section.servicos {
 .options ul {
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 5px;
 }
 
 .options li {
   padding: 15px 10px;
+  cursor: pointer;
 }
 
-.options li:hover, .options li:focus, .options li.active {
+.options li:focus, .options li.active {
   border-radius: 10px 0px 0px 10px;
   background: rgba(255, 255, 255, 0.25);
-  cursor: pointer;
+}
+
+.options li:hover {
+  border-radius: 10px 0px 0px 10px;
+  background: rgba(255, 255, 255, 0.13);
 }
 
 .options h2 {

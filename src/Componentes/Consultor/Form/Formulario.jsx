@@ -48,11 +48,7 @@ const Formulario = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      action="https://formsubmit.co/julio.braz@automatisales.com.br"
-      method="POST"
-    >
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.formGroup}>
         <label>Nome *</label>
         <input

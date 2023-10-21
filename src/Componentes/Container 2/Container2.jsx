@@ -17,25 +17,25 @@ const Container2 = () => {
   const [infos, setInfos] = React.useState([
     {
       title: 'Enriquecimento de dados',
-      desc: 'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. ',
+      desc: '“Transforme seus dados em insights valiosos e tome decisões mais informadas com a automação de enriquecimento de dados!”',
       img: [enriquecimento, enriquecimento2],
       active: true,
     },
     {
       title: 'Prospecção Automática ',
-      desc: 'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. ',
+      desc: '“Você pode economizar tempo, dinheiro e recursos, focando nos leads mais qualificados e relevantes para o seu produto ou serviço.”',
       img: [prospeccao, prospeccao2],
       active: false,
     },
     {
       title: 'Super poderes ao CRM',
-      desc: 'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. ',
+      desc: 'Através da API as funcionalidades podem ser potencializam o seu sistema de gestão de relacionamento com o cliente, tornando-o mais ágil, integrado e produtivo.',
       img: [CRM, CRM2, CRM3],
       active: false,
     },
     {
       title: 'Inteligência Artificial',
-      desc: 'Lorem ipsum dolor sit amet consectetur. Elementum justo tincidunt lacus id vitae. ',
+      desc: 'tecnologia que simula a capacidade humana de aprender, raciocinar e resolver problemas.',
       img: [IA],
       active: false,
     },

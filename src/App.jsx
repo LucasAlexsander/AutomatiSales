@@ -8,6 +8,7 @@ import Consultor from './Componentes/Consultor/Consultor';
 
 import Cookies from 'js-cookie';
 import Cookie from './Componentes/Cookie/Cookie';
+import Agradecimento from './Componentes/Agradecimento/Agradecimento';
 
 function App() {
   const [referrer, setReferrer] = useState('');

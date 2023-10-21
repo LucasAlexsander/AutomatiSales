@@ -1,0 +1,49 @@
+.cookieBanner {
+  width: calc(100dvw - 20px);
+  height: 100dvh;
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+
+.cookie {
+  position: absolute;
+  max-width: 500px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 10px 20px;
+  bottom: 10px;
+  border-radius: .25rem;
+}
+
+.cookie p {
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.buttonArea {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttonArea button {
+  padding: 8px 20px;
+  border-radius: .25rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.buttonArea button:hover {
+  opacity: .8;
+}
+
+.buttonArea button:nth-child(1) {
+  background: linear-gradient(180deg, #05A86C 0%, #039A62 100%);
+  color: #F1F1F1;
+}

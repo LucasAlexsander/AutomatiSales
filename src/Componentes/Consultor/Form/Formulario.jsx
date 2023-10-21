@@ -15,7 +15,11 @@ const Formulario = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form
+      // onSubmit={handleSubmit(onSubmit)}
+      action="https://formsubmit.co/lucas.alexsander@ufvjm.edu.br"
+      method="POST"
+    >
       <div className={styles.formGroup}>
         <label>Nome *</label>
         <input
@@ -56,7 +60,6 @@ const Formulario = () => {
       <div className={styles.formGroup}>
         <label>Cargo *</label>
         <select
-          placeholder="eo"
           className={errors?.cargo && styles.inputError}
           {...register('cargo', {
             validate: (value) => value !== '0',
@@ -106,6 +109,8 @@ const Formulario = () => {
       <div className={styles.formGroup}>
         <button type="submit">Cadastrar</button>
       </div>
+
+      <input type="hidden" name="_subject" value="Novo Lead!" />
     </form>
   );
 };

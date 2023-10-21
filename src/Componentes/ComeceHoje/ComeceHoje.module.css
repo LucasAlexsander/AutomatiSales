@@ -38,6 +38,11 @@
   transition: background, color, transform .2s;
 }
 
+.btnConsultor:hover {
+  background: linear-gradient(180deg, #cacecc 0%, rgb(202, 212, 209) 100%);
+  color: #197528;
+}
+
 @media only screen and (max-width: 786px) {
   .comeceHoje h3 {
     font-size: 1.5rem;

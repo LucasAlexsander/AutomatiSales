@@ -71,6 +71,10 @@ li.button a {
   font-size: 1rem;
 }
 
+li.button a:hover {
+  background: linear-gradient(180deg, #12c986 0%, rgb(16, 190, 126) 100%);
+}
+
 /* Mobile */
 .menuBurguer {
   display: none;

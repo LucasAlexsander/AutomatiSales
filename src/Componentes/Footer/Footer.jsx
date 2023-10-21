@@ -4,6 +4,7 @@ import IconInsta from '../../../public/midia/Icons/Insta.svg?react';
 import IconLinkedin from '../../../public/midia/Icons/linkedin.svg?react';
 import IconFacebook from '../../../public/midia/Icons/facebook.svg?react';
 import IconMake from '../../../public/midia/Icons/make.svg?react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,13 +18,25 @@ const Footer = () => {
       <div className={styles.end}>
         <p>Copyright © 2023. Todos os direitos reservados</p>
         <div className={styles.social}>
-          <a href="#">
+          <Link
+            to="https://www.instagram.com/automatisales/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconInsta />
-          </a>
-          <a href="#">
+          </Link>
+          <a
+            href="https://www.linkedin.com/company/automatisales"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconLinkedin />
           </a>
-          <a href="#">
+          <a
+            href="https://www.facebook.com/automatisales"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconFacebook />
           </a>
         </div>

@@ -31,13 +31,9 @@ const Formulario = () => {
     `;
 
     const config = {
-      Username: 'lucaslucaslucas655@gmail.com',
-      Password: 'D354229D760404F6D2F5FB255E5DF0295D83',
-      Host: 'smtp.elasticemail.com',
-      Port: '2525',
-      // secureToken: 'd9b28d97-d832-4d5b-b91d-4bf59c6c26a6',
-      To: 'lucas.alexsander@ufvjm.edu.br',
-      From: 'lucaslucaslucas655@gmail.com',
+      SecureToken: 'd0632ec0-5493-4f76-b17e-b2219f871966',
+      To: 'julio.braz@automatisales.com.br',
+      From: 'juliobraz@id.uff.br',
       Subject: 'Novo Lead!',
       Body: text,
     };

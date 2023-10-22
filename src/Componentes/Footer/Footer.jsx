@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.patern}>
-        <p>Principal Parceiro</p>
+        <p>Parceira Oficial</p>
         <span></span>
         <IconMake className={styles.a} />
       </div>

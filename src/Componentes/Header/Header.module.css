@@ -199,4 +199,9 @@ li.button a:hover {
   .menuBurguer {
     display: block;
   }
+
+  .logo img {
+    padding-top: 10px;
+    width: 70px;
+  }
 }

@@ -39,8 +39,6 @@ const Formulario = () => {
     };
 
     window.Email.send(config).then(navigate('/agradecimento'));
-
-    console.log(text);
   };
 
   return (

@@ -19,8 +19,7 @@ const Container1 = () => {
         </h1>
         <p>
           Reduza em 70 a 80% dos processos manuais do seu time de vendas,
-          deixando eles focarem no focar no que realmente importa que é fechar
-          vendas.
+          deixando eles focarem no que realmente importa que é fechar vendas.
         </p>
       </div>
 

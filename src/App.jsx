@@ -9,6 +9,7 @@ import Consultor from './Componentes/Consultor/Consultor';
 import Cookies from 'js-cookie';
 import Cookie from './Componentes/Cookie/Cookie';
 import Agradecimento from './Componentes/Agradecimento/Agradecimento';
+import NotFound from './Componentes/NotFound/NotFound';
 
 function App() {
   const [referrer, setReferrer] = useState('');
@@ -35,8 +36,9 @@ function App() {
         <Cookie />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/consultor" element={<Consultor />} />
-          <Route path="/agradecimento" element={<Agradecimento />} />
+          <Route path="consultor" element={<Consultor />} />
+          <Route path="agradecimento" element={<Agradecimento />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

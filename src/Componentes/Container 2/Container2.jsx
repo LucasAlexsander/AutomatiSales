@@ -36,7 +36,7 @@ const Container2 = () => {
     {
       title: 'Inteligência Artificial',
       desc: 'tecnologia que simula a capacidade humana de aprender, raciocinar e resolver problemas.',
-      img: [IA],
+      img: [IA, IA],
       active: false,
     },
   ]);

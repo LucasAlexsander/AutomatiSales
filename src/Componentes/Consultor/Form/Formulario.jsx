@@ -32,7 +32,7 @@ const Formulario = () => {
 
     const config = {
       SecureToken: '1a413ba9-e044-4e8a-96d2-3aa93f1d4338',
-      To: 'julio.braz@automatisales.com.br',
+      To: 'juliorbraz@id.uff.br',
       From: 'automatisalessend@gmail.com',
       Subject: 'Novo Lead!',
       Body: text,
